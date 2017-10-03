@@ -1,0 +1,11 @@
+﻿@using Orchard.ContentManagement
+@using Orchard.Core.Common.Models
+This is our homepage title.
+
+@{
+    Layout.Title = Model.Title;
+
+    var ownerName = ((ContentItem)Model.ContentItem).As<CommonPart>().Owner.UserName;
+}
+<h1>@Model.Title</h1>
+@Display.OwnerDisplay(OwnerName: Model.ContentItem.CommonPart.Owner.UserName)

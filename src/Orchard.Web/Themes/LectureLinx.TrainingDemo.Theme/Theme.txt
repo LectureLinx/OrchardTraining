@@ -1,0 +1,8 @@
+Name: LectureLinx Training Demo Theme
+Author: Zoltan and the LectureLinx team
+Website: http://www.orchardproject.net
+Description: Description for the theme
+Version: 1.0
+BaseTheme: TheThemeMachine
+# todo: provide tags
+# Tags: Classic, Serif
