@@ -1,0 +1,11 @@
+﻿Name: LectureLinx Training Demo Module
+AntiForgery: enabled
+Author: Zoltan and the LectureLinx team
+Website: http://orchardproject.net
+Version: 1.0
+OrchardVersion: 1.0
+Description: Description for the module
+Features:
+    LectureLinx.TrainingDemo.Module:
+		Category: Demo
+        Description: Description for feature LectureLinx.TrainingDemo.Module.

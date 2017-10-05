@@ -278,6 +278,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orchard.Resources", "Orchar
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LectureLinx.TrainingDemo.Theme", "Orchard.Web\Themes\LectureLinx.TrainingDemo.Theme\LectureLinx.TrainingDemo.Theme.csproj", "{4C4CA79E-BE28-44BF-9051-EBF199F85AF9}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CustomThemes", "CustomThemes", "{0D502204-DD3E-4AF8-8F25-94057971CADC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CustomModules", "CustomModules", "{23CE5A80-9082-4531-8AB8-C6E83D4DD2DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LectureLinx.TrainingDemo.Module", "Orchard.Web\Modules\LectureLinx.TrainingDemo.Module\LectureLinx.TrainingDemo.Module.csproj", "{FDD496D1-F8B7-4811-B566-3E212E2A891A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		CodeCoverage|Any CPU = CodeCoverage|Any CPU
@@ -1114,6 +1120,16 @@ Global
 		{4C4CA79E-BE28-44BF-9051-EBF199F85AF9}.FxCop|Any CPU.Build.0 = Release|Any CPU
 		{4C4CA79E-BE28-44BF-9051-EBF199F85AF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4C4CA79E-BE28-44BF-9051-EBF199F85AF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDD496D1-F8B7-4811-B566-3E212E2A891A}.CodeCoverage|Any CPU.ActiveCfg = Release|Any CPU
+		{FDD496D1-F8B7-4811-B566-3E212E2A891A}.CodeCoverage|Any CPU.Build.0 = Release|Any CPU
+		{FDD496D1-F8B7-4811-B566-3E212E2A891A}.Coverage|Any CPU.ActiveCfg = Release|Any CPU
+		{FDD496D1-F8B7-4811-B566-3E212E2A891A}.Coverage|Any CPU.Build.0 = Release|Any CPU
+		{FDD496D1-F8B7-4811-B566-3E212E2A891A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDD496D1-F8B7-4811-B566-3E212E2A891A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDD496D1-F8B7-4811-B566-3E212E2A891A}.FxCop|Any CPU.ActiveCfg = Release|Any CPU
+		{FDD496D1-F8B7-4811-B566-3E212E2A891A}.FxCop|Any CPU.Build.0 = Release|Any CPU
+		{FDD496D1-F8B7-4811-B566-3E212E2A891A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDD496D1-F8B7-4811-B566-3E212E2A891A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1201,7 +1217,8 @@ Global
 		{90EBEE36-B5CD-42A8-A21B-76270E2C5D24} = {DF3909B0-1DDD-4D8A-9919-56FC438E25E2}
 		{98251EAE-A41B-47B2-AA91-E28B8482DA70} = {E9C9F120-07BA-4DFB-B9C3-3AFB9D44C9D5}
 		{D4E8F7C8-2DB2-4C50-A422-DA1DF1E3CC73} = {E9C9F120-07BA-4DFB-B9C3-3AFB9D44C9D5}
-		{4C4CA79E-BE28-44BF-9051-EBF199F85AF9} = {74492CBC-7201-417E-BC29-28B4C25A58B0}
+		{4C4CA79E-BE28-44BF-9051-EBF199F85AF9} = {0D502204-DD3E-4AF8-8F25-94057971CADC}
+		{FDD496D1-F8B7-4811-B566-3E212E2A891A} = {23CE5A80-9082-4531-8AB8-C6E83D4DD2DE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		EnterpriseLibraryConfigurationToolBinariesPath = packages\TransientFaultHandling.Core.5.1.1209.1\lib\NET4
