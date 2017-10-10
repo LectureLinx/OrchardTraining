@@ -73,7 +73,11 @@
   <ItemGroup>
     <Compile Include="Controllers\DependencyInjectionController.cs" />
     <Compile Include="Controllers\OurFirstController.cs" />
+    <Compile Include="Migrations.cs" />
+    <Compile Include="Models\PersonRecord.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\IPersonManager.cs" />
+    <Compile Include="Services\PersonManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Web.config" />
@@ -93,9 +97,7 @@
       <Private>false</Private>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Models\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Views\OurFirst\Index.cshtml" />
   </ItemGroup>
