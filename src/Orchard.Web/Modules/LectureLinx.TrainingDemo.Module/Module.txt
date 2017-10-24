@@ -9,3 +9,8 @@ Features:
     LectureLinx.TrainingDemo.Module:
 		Category: Demo
         Description: Description for feature LectureLinx.TrainingDemo.Module.
+	LectureLinx.TrainingDemo.Module.Contents:
+		Category: Demo
+		Name: LectureLinx Training Demo Module - Contents
+		Description: Demo for content types and content parts.
+		Dependencies: LectureLinx.TrainingDemo.Module

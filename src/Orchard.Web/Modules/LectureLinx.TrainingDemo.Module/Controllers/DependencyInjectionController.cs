@@ -6,6 +6,7 @@ using System.Web;
 using System.Web.Mvc;
 using LectureLinx.TrainingDemo.Module.Services;
 using Orchard;
+using Orchard.DisplayManagement;
 using Orchard.Exceptions;
 using Orchard.FileSystems.Media;
 using Orchard.Localization;
@@ -24,6 +25,7 @@ namespace LectureLinx.TrainingDemo.Module.Controllers
         private readonly IWorkContextAccessor _wca;
         private readonly IPersonManager _personManager;
         private readonly IStorageProvider _storageProvider;
+        private readonly dynamic _shapeFactory;
 
         public Localizer T { get; set; }
 
@@ -35,13 +37,15 @@ namespace LectureLinx.TrainingDemo.Module.Controllers
             IHttpContextAccessor hca,
             IWorkContextAccessor wca,
             IPersonManager personManager,
-            IStorageProvider storageProvider)
+            IStorageProvider storageProvider,
+            IShapeFactory shapeFactory)
         {
             _notifier = notifier;
             _hca = hca;
             _wca = wca;
             _personManager = personManager;
             _storageProvider = storageProvider;
+            _shapeFactory = shapeFactory;
 
             T = NullLocalizer.Instance;
             Logger = NullLogger.Instance;
@@ -104,6 +108,11 @@ namespace LectureLinx.TrainingDemo.Module.Controllers
             }
 
             return _storageProvider.ReadAllText("SubFolder/file.txt");
+        }
+
+        public ActionResult AdhocShapeDemo()
+        {
+            return new ShapeResult(this, _shapeFactory.DemoAdhocShape());
         }
     }
 }

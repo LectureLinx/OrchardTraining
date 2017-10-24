@@ -1,0 +1,19 @@
+﻿@model LectureLinx.TrainingDemo.Module.Models.PersonListPart
+
+<fieldset>
+    <legend>@T("Person List Part Settings")</legend>
+    <ol>
+        <li>
+            @Html.LabelFor(model => model.Sex, T("Sex"))
+            @Html.DropDownListFor(model => model.Sex, new SelectList(new[]
+           {
+               new SelectListItem { Text = T("Male").Text, Value = "Male" },
+               new SelectListItem { Text = T("Female").Text, Value = "Female" }
+           }, "Value", "Text"))
+        </li>
+        <li>
+            @Html.LabelFor(model => model.MaxCount, T("Max Count"))
+            @Html.TextBoxFor(model => model.MaxCount)
+        </li>
+    </ol>
+</fieldset>

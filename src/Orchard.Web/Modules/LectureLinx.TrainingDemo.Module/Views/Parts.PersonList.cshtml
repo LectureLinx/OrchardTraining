@@ -1,0 +1,14 @@
+﻿@{
+    LectureLinx.TrainingDemo.Module.Models.PersonListPart list = Model.ContentPart;
+}
+
+@T("Displaying a maximum of {0} items.", list.MaxCount)
+
+<ul>
+    @foreach (var person in list.Persons)
+    {
+        <li>
+            @person.Name
+        </li>
+    }
+</ul>
