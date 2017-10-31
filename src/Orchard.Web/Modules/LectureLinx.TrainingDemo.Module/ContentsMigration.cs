@@ -27,5 +27,21 @@ namespace LectureLinx.TrainingDemo.Module
 
             return 1;
         }
+
+        public int UpdateFrom1()
+        {
+            ContentDefinitionManager
+                .AlterTypeDefinition("PersonListContainer2",
+                type => type
+                    .DisplayedAs("Person List Container 2")
+                    .Creatable()
+                    .Listable()
+                    .WithPart(typeof(PersonListPart).Name)
+                    .WithPart("TitlePart")
+                    .WithPart("CommonPart", builder => builder
+                        .WithSetting("OwnerEditorSettings.ShowOwnerEditor", "True")));
+
+            return 2;
+        }
     }
 }
