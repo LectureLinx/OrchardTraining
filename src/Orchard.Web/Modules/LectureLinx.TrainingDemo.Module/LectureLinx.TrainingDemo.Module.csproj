@@ -72,6 +72,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ContentsMigration.cs" />
+    <Compile Include="Controllers\CachingController.cs" />
     <Compile Include="Controllers\ContentsController.cs" />
     <Compile Include="Controllers\DependencyInjectionController.cs" />
     <Compile Include="Controllers\OurFirstController.cs" />
@@ -100,6 +101,10 @@
       <Project>{9916839C-39FC-4CEB-A5AF-89CA7E87119F}</Project>
       <Name>Orchard.Core</Name>
       <Private>false</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Orchard.Caching\Orchard.Caching.csproj">
+      <Project>{7528BF74-25C7-4ABE-883A-443B4EEC4776}</Project>
+      <Name>Orchard.Caching</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

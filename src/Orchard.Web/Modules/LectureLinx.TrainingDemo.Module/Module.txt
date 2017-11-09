@@ -9,6 +9,7 @@ Features:
     LectureLinx.TrainingDemo.Module:
 		Category: Demo
         Description: Description for feature LectureLinx.TrainingDemo.Module.
+		Dependencies: Orchard.Caching
 	LectureLinx.TrainingDemo.Module.Contents:
 		Category: Demo
 		Name: LectureLinx Training Demo Module - Contents
